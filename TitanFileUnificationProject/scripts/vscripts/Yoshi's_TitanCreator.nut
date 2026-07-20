@@ -64,7 +64,7 @@ function setUp( script_int )//I shoulda had this as a bool but eh.. NO, I got id
 		{
 
 			local loop_max = MasterTitanTable.len()
-			for( local E = 3; E < ( loop_max + E ); E++ )
+			for( local E = 0; E < ( loop_max + E ); E++ )
 			{
 				local titan = MasterTitanTable[ E ]
 
@@ -98,7 +98,17 @@ function setUp( script_int )//I shoulda had this as a bool but eh.. NO, I got id
 	{
 		if( IsValid( MasterTitanTable ) )
 		{
-			BlackMarketModel_Register( LEGION_MODEL, STRYDER_HATCH_PANEL, 53, "../ui/menu/items/mod_icons/scatterfire" )
+			for( local E = 3; E < ( loop_max + E ); E++ )
+			{
+				local titan = MasterTitanTable[ E ]
+
+				local model_name = titan.titan_model
+				local hatch_name = titan.hatch_model
+				local rodeo_hitbox = titan.rodeo_hitbox_number
+				local coop_img = titan.coop_img
+
+				BlackMarketModel_Register( model_name, hatch_name, rodeo_hitbox, coop_img )
+			}
 		}
 		return
 	}
