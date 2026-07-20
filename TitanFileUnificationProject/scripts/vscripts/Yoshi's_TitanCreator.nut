@@ -1,28 +1,5 @@
 
 
-//models
-const LEGION_MODEL = "models/titans/heavy/titan_heavy_deadbolt.mdl"
-
-
-/*
-Instructions:
-
-if using new model put const above here
-
-Go to INSERT TITAN HERE and insert a construct function call.
-If using a custom model create a new model register function call.
-
-name = the titan name, example: "titan_atlas"
-type = the titan type, example: "stryder", for this mod please use "special_stryder", "special_atlas", or "special_ogre"
-unless you need it specific.
-embark override is purely for _titan_embark script. use titan_ogre/titan_atlas/titan_stryder depending, please no null
-
-Rest is pretty self-explanatory really, its in the name of the variables.
-
-Now remember to import SET file in classes
-
-*/
-
 
 function main()
 {
