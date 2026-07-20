@@ -24,6 +24,8 @@ function setUp( script_int )//I shoulda had this as a bool but eh.. NO, I got id
 
 	::Titans_Enum_Placement <- 3 //Base number of titans at start
 
+	printl(::Titans_Enum_Placement)
+
 	if( script_int == 1 )
 	{
 		//IncludeFile( "_items" )
@@ -37,13 +39,15 @@ function setUp( script_int )//I shoulda had this as a bool but eh.. NO, I got id
 
 	if ( script_int != 3 )// INSERT TITAN HERE
 	{
-		if( IsValid( MasterTitanTable ) )
+		if( IsValid( MasterModdedTitans ) )
 		{
 
-			local loop_max = MasterTitanTable.len()
+			local loop_max = MasterModdedTitans.len()
+			//printl( loop_max )
+			//printl("EEEEEEEDdDDDEEDD")
 			for( local E = 0; E < loop_max ; E++ )
 			{
-				local titan = MasterTitanTable[ E ]
+				local titan = MasterModdedTitans[ E ]
 
 				local setfile = titan.setfile
 				local type = titan.titan_type
@@ -73,12 +77,12 @@ function setUp( script_int )//I shoulda had this as a bool but eh.. NO, I got id
 	}
 	else// INSERT CUSTOM MDL CONST, HATCH CONST, and RODEO HITBOX NUMBER ( weakpoint basically )
 	{
-		if( IsValid( MasterTitanTable ) )
+		if( IsValid( MasterModdedTitans ) )
 		{
-			local loop_max = MasterTitanTable.len()
+			local loop_max = MasterModdedTitans.len()
 			for( local E = 0; E < loop_max; E++ )
 			{
-				local titan = MasterTitanTable[ E ]
+				local titan = MasterModdedTitans[ E ]
 
 				local model_name = titan.titan_model
 				local hatch_name = titan.hatch_model
@@ -124,6 +128,8 @@ function BlackMarketTitan_Construct( call_type, name, type, embark_override, unl
 	else if ( call_type == 2 ) // pdef
 	{
 		::Titans_Enum_Placement <- ::Titans_Enum_Placement + 1
+		printl(::Titans_Enum_Placement)
+		//::Titans_Enum_Placement <- ::Titans_Enum_Placement + 1
 		::titanSetFile[ name ] <- ::Titans_Enum_Placement
 	}
 }

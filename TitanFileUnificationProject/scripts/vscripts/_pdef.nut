@@ -35,6 +35,7 @@ function InitPersistence()
     AddPersistenceKey("haveSeenCustomCoop", "bool")
 
 	IncludeFile( "Yoshi's_All-Stars" )
+	IncludeFile("Yoshi's_TitanCreator")
 
     ::gameModes <- {
         tdm = 0
@@ -240,7 +241,7 @@ function InitPersistence()
 
     AddPersistenceEnum("titanSetFile", titanSetFile)
 
-	IncludeFile("Yoshi's_TitanCreator")
+	//IncludeFile("Yoshi's_TitanCreator")
 
 	setUp( 2 )
 
