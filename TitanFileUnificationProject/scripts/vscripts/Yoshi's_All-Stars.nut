@@ -2,6 +2,7 @@
 
 function main()
 {
+	Globalize( MasterTitanCreation )
 	printl( "STAAAARRRRSSSS" )
 }
 main()
