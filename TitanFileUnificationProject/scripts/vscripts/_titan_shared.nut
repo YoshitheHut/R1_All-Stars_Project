@@ -45,7 +45,7 @@ function main()
 	level.hatchModels[ OGRE_MODEL ] <- OGRE_HATCH_PANEL
 	level.hatchModels[ DESTROYER_MODEL ] <- DESTROYER_HATCH_PANEL
 
-	level.hatchModels[ LEGION_MODEL ] <- STRYDER_HATCH_PANEL
+	//level.hatchModels[ LEGION_MODEL ] <- STRYDER_HATCH_PANEL
 
 	level.rodeoHitBoxNumber <- {}
 	level.rodeoHitBoxNumber[ ATLAS_MODEL ] <- 34
@@ -53,7 +53,7 @@ function main()
 	level.rodeoHitBoxNumber[ OGRE_MODEL ] <- 41
 	level.rodeoHitBoxNumber[ DESTROYER_MODEL ] <- 30
 
-	level.rodeoHitBoxNumber[ LEGION_MODEL ] <- 53
+	//level.rodeoHitBoxNumber[ LEGION_MODEL ] <- 53
 
 	local loop_max = TitanModels.len()
 	for( local E = 0; E < loop_max; E++ )
