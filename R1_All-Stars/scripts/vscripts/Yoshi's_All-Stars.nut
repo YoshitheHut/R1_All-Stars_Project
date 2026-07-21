@@ -1,10 +1,8 @@
 // For Modded Titans
 //const LEGION_MODEL = "models/titans/heavy/titan_heavy_deadbolt.mdl"
-const BASE_TITAN_COUNT = 4 //Adds 3 for titans and 1 to make a valid array placement
 function main()
 {
-	::MasterModdedTitans <- []
-	::Titans_Enum_Placement <- 3
+	Globalize( titan_dash_mathematics )
 	Globalize( MasterTitanCreation )
 	printl( "STAAAARRRRSSSS" )
 	
