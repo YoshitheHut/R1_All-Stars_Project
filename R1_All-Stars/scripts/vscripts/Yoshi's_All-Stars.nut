@@ -5,6 +5,8 @@ function main()
 	Globalize( titan_dash_mathematics )
 	Globalize( MasterTitanCreation )
 	printl( "STAAAARRRRSSSS" )
+
+	//IncludeFile( "sv_create_legion" )
 	
 }
 
@@ -65,7 +67,7 @@ function MasterTitanCreation( file, type, emb_ove, unl_lv, p_name, p_desc, t_img
 	printl(::Titans_Enum_Placement)
 	
 	add_setfile_persistance( file, ::Titans_Enum_Placement )
-	CreateBlackMarketModdedItems( Titans_Enum_Placement - BASE_TITAN_COUNT )
+	//CreateBlackMarketModdedItems( Titans_Enum_Placement - BASE_TITAN_COUNT )
 }
 //holy shit i almost had the entire alphabet [ u v w x y z ]
 
